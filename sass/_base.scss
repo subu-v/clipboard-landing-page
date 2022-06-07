@@ -17,6 +17,7 @@ html {
 
 body {
   box-sizing: border-box;
+  color: $color__blue--grayish;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.6rem;
 }
@@ -27,8 +28,21 @@ body {
   padding: 4.8rem 9.6rem;
 }
 
-.heading-primary {
-  font-size: 4.4rem;
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   font-weight: 600;
   color: $color__blue--dark-grayish;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
 }

@@ -15,6 +15,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #9fabb2;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.6rem;
 }
@@ -25,10 +26,65 @@ body {
   padding: 4.8rem 9.6rem;
 }
 
-.heading-primary {
-  font-size: 4.4rem;
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   font-weight: 600;
   color: #4c545d;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex__direction--col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex__gap--m {
+  gap: 4.8rem;
+}
+
+.flex__justify-content--c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid__col--2 {
+  -ms-grid-columns: 0.7fr 0.3fr;
+      grid-template-columns: 0.7fr 0.3fr;
+}
+
+.grid__col-gap--l {
+  -webkit-column-gap: 9.6rem;
+          column-gap: 9.6rem;
+}
+
+.margin-bottom--xxs {
+  margin-bottom: 0.8rem;
 }
 
 .margin-bottom--xs {
@@ -41,6 +97,10 @@ body {
 
 .margin-bottom--m {
   margin-bottom: 4.8rem;
+}
+
+.margin-bottom--l {
+  margin-bottom: 8rem;
 }
 
 .header {
@@ -101,4 +161,28 @@ body {
 .header .button--mac:visited:hover,
 .header .button--mac:visited:active {
   background-color: #7181ff;
+}
+
+.features {
+  line-height: 1.7;
+}
+
+.features__header {
+  text-align: center;
+}
+
+.features__text {
+  font-size: 1.8rem;
+}
+
+.features__info-box {
+  max-width: 75vw;
+}
+
+.features__image {
+  width: 100%;
+}
+
+.features__description {
+  font-size: 1.4rem;
 }

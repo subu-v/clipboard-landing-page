@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+}
+
+.flex__direction--col {
+  flex-direction: column;
+}
+
+.flex__gap--m {
+  gap: 4.8rem;
+}
+
+.flex__justify-content--c {
+  justify-content: center;
+}

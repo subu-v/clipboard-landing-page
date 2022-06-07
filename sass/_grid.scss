@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+}
+
+.grid__col--2 {
+  grid-template-columns: 0.7fr 0.3fr;
+}
+
+.grid__col-gap--l {
+  column-gap: 9.6rem;
+}

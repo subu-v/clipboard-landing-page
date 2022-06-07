@@ -1,7 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 4.8rem 9.6rem;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 600;
+  color: #4c545d;
+}
+
+.margin-bottom--xs {
+  margin-bottom: 1.6rem;
+}
+
+.margin-bottom--s {
+  margin-bottom: 3.2rem;
+}
+
+.margin-bottom--m {
+  margin-bottom: 4.8rem;
+}
+
 .header {
+  background-image: url(../images/bg-header-desktop.png);
+  background-size: cover;
+  background-position: center;
+  padding: 4.8rem;
   text-align: center;
 }
 
 .header .logo {
   width: 15%;
+}
+
+.header__text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #9fabb2;
+}
+
+.header__buttons :not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.header .button:link,
+.header .button:visited {
+  border-radius: 10rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 1.2rem 3rem;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header .button--ios:link,
+.header .button--ios:visited {
+  background-color: #26baa4;
+  -webkit-box-shadow: 0 1.5rem 3rem rgba(38, 186, 164, 0.2);
+          box-shadow: 0 1.5rem 3rem rgba(38, 186, 164, 0.2);
+}
+
+.header .button--ios:link:hover, .header .button--ios:link:active,
+.header .button--ios:visited:hover,
+.header .button--ios:visited:active {
+  background-color: #3cc1ad;
+}
+
+.header .button--mac:link,
+.header .button--mac:visited {
+  background-color: #6173ff;
+  -webkit-box-shadow: 0 1.5rem 3rem rgba(97, 115, 255, 0.2);
+          box-shadow: 0 1.5rem 3rem rgba(97, 115, 255, 0.2);
+}
+
+.header .button--mac:link:hover, .header .button--mac:link:active,
+.header .button--mac:visited:hover,
+.header .button--mac:visited:active {
+  background-color: #7181ff;
 }

@@ -1,1 +1,7 @@
-/* No CSS */
+.header {
+  text-align: center;
+}
+
+.header .logo {
+  width: 15%;
+}

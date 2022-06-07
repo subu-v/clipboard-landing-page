@@ -26,6 +26,11 @@ body {
   padding: 4.8rem 9.6rem;
 }
 
+.container--120mw {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -78,6 +83,16 @@ body {
       grid-template-columns: 0.7fr 0.3fr;
 }
 
+.grid__col--3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__col-gap--s {
+  -webkit-column-gap: 3.2rem;
+          column-gap: 3.2rem;
+}
+
 .grid__col-gap--l {
   -webkit-column-gap: 9.6rem;
           column-gap: 9.6rem;
@@ -101,6 +116,10 @@ body {
 
 .margin-bottom--l {
   margin-bottom: 8rem;
+}
+
+.text-align--c {
+  text-align: center;
 }
 
 .header {
@@ -185,4 +204,8 @@ body {
 
 .features__description {
   font-size: 1.4rem;
+}
+
+.features__icon {
+  height: 25%;
 }

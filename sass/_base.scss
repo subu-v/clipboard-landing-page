@@ -1,6 +1,8 @@
 //Importing font-family from "Google fonts"
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
+@import "_variables.scss";
+
 *,
 ::before,
 ::after {
@@ -20,7 +22,13 @@ body {
 }
 
 .container {
-  max-width: 100rem;
+  max-width: 90rem;
   margin: 0 auto;
   padding: 4.8rem 9.6rem;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 600;
+  color: $color__blue--dark-grayish;
 }

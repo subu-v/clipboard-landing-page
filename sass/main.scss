@@ -1,12 +1,90 @@
 // IMPORTS
-@import "base.scss";
-@import "variables.scss";
-
+@import "_base.scss";
+@import "_utility.scss";
+@import "_variables.scss";
 
 .header {
+  background-image: url(../images/bg-header-desktop.png);
+  background-size: cover;
+  background-position: center;
+  padding: 4.8rem;
   text-align: center;
 
   .logo {
     width: 15%;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color__blue--grayish;
+  }
+
+  &__buttons {
+    :not(:last-child) {
+      margin-right: 1.6rem;
+    }
+  }
+
+  // .button {
+  //   border: none;
+  //   outline: none;
+  //   color: $color__white;
+  //   border-radius: 10rem;
+  //   display: inline-block;
+  //   font-size: 1.4rem;
+  //   padding: 1.2rem 3rem;
+  //   transition: all 0.3s ease;
+  // }
+
+  // .button--ios {
+  //   background-color: $color__cyan--strong;
+  //   box-shadow: 0 1.5rem 3rem rgba($color__cyan--strong, 0.2);
+
+  //   &:hover,
+  //   &:active {
+  //     background-color: #3cc1ad;
+  //   }
+  // }
+
+  // .button--mac {
+  //   background-color: $color__blue--light;
+  //   box-shadow: 0 1.5rem 3rem rgba($color__blue--light, 0.2);
+
+  //   &:hover,
+  //   &:active {
+  //     background-color: #7181ff;
+  //   }
+
+  .button:link,
+  .button:visited {
+    border-radius: 10rem;
+    color: $color__white;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 1.2rem 3rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .button--ios:link,
+  .button--ios:visited {
+    background-color: $color__cyan--strong;
+    box-shadow: 0 1.5rem 3rem rgba($color__cyan--strong, 0.2);
+
+    &:hover,
+    &:active {
+      background-color: #3cc1ad;
+    }
+  }
+  .button--mac:link,
+  .button--mac:visited {
+    background-color: $color__blue--light;
+    box-shadow: 0 1.5rem 3rem rgba($color__blue--light, 0.2);
+
+    &:hover,
+    &:active {
+      background-color: #7181ff;
+    }
   }
 }

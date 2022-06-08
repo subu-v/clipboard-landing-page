@@ -29,6 +29,7 @@ body {
 .container--120mw {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 9.6rem;
 }
 
 .heading-primary,
@@ -127,7 +128,6 @@ body {
   background-size: cover;
   background-position: center;
   padding: 4.8rem;
-  text-align: center;
 }
 
 .header .logo {
@@ -186,10 +186,6 @@ body {
   line-height: 1.7;
 }
 
-.features__header {
-  text-align: center;
-}
-
 .features__text {
   font-size: 1.8rem;
 }
@@ -206,6 +202,15 @@ body {
   font-size: 1.4rem;
 }
 
-.features__icon {
-  height: 25%;
+.specialities__text {
+  font-size: 1.6rem;
+}
+
+.specialities__icon {
+  height: 15%;
+}
+
+.specialities__description {
+  font-size: 1.4rem;
+  line-height: 1.7;
 }

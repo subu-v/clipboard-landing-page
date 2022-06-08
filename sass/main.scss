@@ -11,7 +11,6 @@
   background-size: cover;
   background-position: center;
   padding: 4.8rem;
-  text-align: center;
 
   .logo {
     width: 15%;
@@ -95,10 +94,6 @@
 .features {
   line-height: 1.7;
 
-  &__header {
-    text-align: center;
-  }
-
   &__text {
     font-size: 1.8rem;
   }
@@ -114,8 +109,19 @@
   &__description {
     font-size: 1.4rem;
   }
+}
+
+.specialities {
+  &__text {
+    font-size: 1.6rem;
+  }
 
   &__icon {
-    height: 25%;
+    height: 15%;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    line-height: 1.7;
   }
 }

@@ -1,8 +1,8 @@
 // IMPORTS
 @import "_base.scss";
-@import "_flex.scss";
-@import "_grid.scss";
-@import "_mixins.scss";
+@import "components/buttons";
+@import "layouts/_flex.scss";
+@import "layouts/_grid.scss";
 @import "_utility.scss";
 @import "_variables.scss";
 
@@ -19,75 +19,9 @@
   &__text {
     font-size: 1.8rem;
     font-weight: 400;
+    line-height: 1.7;
     color: $color__blue--grayish;
-  }
-
-  &__buttons {
-    :not(:last-child) {
-      margin-right: 1.6rem;
-    }
-  }
-
-  // .button {
-  //   border: none;
-  //   outline: none;
-  //   color: $color__white;
-  //   border-radius: 10rem;
-  //   display: inline-block;
-  //   font-size: 1.4rem;
-  //   padding: 1.2rem 3rem;
-  //   transition: all 0.3s ease;
-  // }
-
-  // .button--ios {
-  //   background-color: $color__cyan--strong;
-  //   box-shadow: 0 1.5rem 3rem rgba($color__cyan--strong, 0.2);
-
-  //   &:hover,
-  //   &:active {
-  //     background-color: #3cc1ad;
-  //   }
-  // }
-
-  // .button--mac {
-  //   background-color: $color__blue--light;
-  //   box-shadow: 0 1.5rem 3rem rgba($color__blue--light, 0.2);
-
-  //   &:hover,
-  //   &:active {
-  //     background-color: #7181ff;
-  //   }
-
-  .button:link,
-  .button:visited {
-    border-radius: 10rem;
-    color: $color__white;
-    display: inline-block;
-    font-size: 1.4rem;
-    padding: 1.2rem 3rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .button--ios:link,
-  .button--ios:visited {
-    background-color: $color__cyan--strong;
-    box-shadow: 0 1.5rem 3rem rgba($color__cyan--strong, 0.2);
-
-    &:hover,
-    &:active {
-      background-color: #3cc1ad;
-    }
-  }
-  .button--mac:link,
-  .button--mac:visited {
-    background-color: $color__blue--light;
-    box-shadow: 0 1.5rem 3rem rgba($color__blue--light, 0.2);
-
-    &:hover,
-    &:active {
-      background-color: #7181ff;
-    }
+    padding: 0 4.8rem;
   }
 }
 
@@ -123,5 +57,69 @@
   &__description {
     font-size: 1.4rem;
     line-height: 1.7;
+  }
+}
+
+.featured {
+  &__logo {
+    width: 15%;
+  }
+}
+
+.downloads {
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 0 4.8rem;
+  }
+}
+
+.footer {
+  background-color: #f5f7f7;
+
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3.2rem 9.6rem;
+  }
+
+  &__logo {
+    height: 85%;
+  }
+
+  &__lists {
+    :not(:last-child) {
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  &__list,
+  &__social-list {
+    font-size: 1.2rem;
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color__blue--dark-grayish;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color__cyan--strong;
+  }
+
+  &__social-lists {
+    margin-left: auto;
+  }
+  &__social-icon {
+    width: 75%;
+
+    &:hover,
+    &:active {
+      filter: saturate(75);
+    }
   }
 }

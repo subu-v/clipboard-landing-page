@@ -1,0 +1,70 @@
+.buttons {
+  position: relative;
+  :not(:last-child) {
+    margin-right: 1.6rem;
+  }
+}
+
+.button:link,
+.button:visited {
+  border-radius: 10rem;
+  height: 5rem;
+  color: $color__white;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 1.4rem 4.4rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button--ios:link,
+.button--ios:visited {
+  background-color: $color__cyan--strong;
+  box-shadow: 0 0.2rem 0 #1e9583, 0 1.5rem 3rem rgba($color__cyan--strong, 0.2);
+
+  &:hover,
+  &:active {
+    background-color: #3cc1ad;
+  }
+}
+
+.button--mac:link,
+.button--mac:visited {
+  background-color: $color__blue--light;
+  box-shadow: 0 0.2rem 0 #4e5ccc, 0 1.5rem 3rem rgba($color__blue--light, 0.2);
+
+  &:hover,
+  &:active {
+    background-color: #7181ff;
+  }
+}
+
+// .button {
+//   border: none;
+//   outline: none;
+//   color: $color__white;
+//   border-radius: 10rem;
+//   display: inline-block;
+//   font-size: 1.4rem;
+//   padding: 1.2rem 3rem;
+//   transition: all 0.3s ease;
+// }
+
+// .button--ios {
+//   background-color: $color__cyan--strong;
+//   box-shadow: 0 1.5rem 3rem rgba($color__cyan--strong, 0.2);
+
+//   &:hover,
+//   &:active {
+//     background-color: #3cc1ad;
+//   }
+// }
+
+// .button--mac {
+//   background-color: $color__blue--light;
+//   box-shadow: 0 1.5rem 3rem rgba($color__blue--light, 0.2);
+
+//   &:hover,
+//   &:active {
+//     background-color: #7181ff;
+//   }

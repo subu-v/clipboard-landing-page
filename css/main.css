@@ -29,7 +29,7 @@ body {
 .container--120mw {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 9.6rem;
+  padding: 4.8rem 9.6rem;
 }
 
 .heading-primary,
@@ -51,6 +51,53 @@ body {
   font-size: 2rem;
 }
 
+.buttons {
+  position: relative;
+}
+
+.buttons :not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.button:link,
+.button:visited {
+  border-radius: 10rem;
+  height: 5rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 1.4rem 4.4rem;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button--ios:link,
+.button--ios:visited {
+  background-color: #26baa4;
+  -webkit-box-shadow: 0 0.2rem 0 #1e9583, 0 1.5rem 3rem rgba(38, 186, 164, 0.2);
+          box-shadow: 0 0.2rem 0 #1e9583, 0 1.5rem 3rem rgba(38, 186, 164, 0.2);
+}
+
+.button--ios:link:hover, .button--ios:link:active,
+.button--ios:visited:hover,
+.button--ios:visited:active {
+  background-color: #3cc1ad;
+}
+
+.button--mac:link,
+.button--mac:visited {
+  background-color: #6173ff;
+  -webkit-box-shadow: 0 0.2rem 0 #4e5ccc, 0 1.5rem 3rem rgba(97, 115, 255, 0.2);
+          box-shadow: 0 0.2rem 0 #4e5ccc, 0 1.5rem 3rem rgba(97, 115, 255, 0.2);
+}
+
+.button--mac:link:hover, .button--mac:link:active,
+.button--mac:visited:hover,
+.button--mac:visited:active {
+  background-color: #7181ff;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,14 +111,34 @@ body {
           flex-direction: column;
 }
 
+.flex__gap--s {
+  gap: 2.4rem;
+}
+
 .flex__gap--m {
   gap: 4.8rem;
+}
+
+.flex__gap--l {
+  gap: 8rem;
 }
 
 .flex__justify-content--c {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.flex__align-items--c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex__align-self--c {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .grid {
@@ -119,8 +186,16 @@ body {
   margin-bottom: 8rem;
 }
 
+.margin-left--auto {
+  margin-left: auto;
+}
+
 .text-align--c {
   text-align: center;
+}
+
+.height--5rem {
+  height: 5rem;
 }
 
 .header {
@@ -137,49 +212,9 @@ body {
 .header__text {
   font-size: 1.8rem;
   font-weight: 400;
+  line-height: 1.7;
   color: #9fabb2;
-}
-
-.header__buttons :not(:last-child) {
-  margin-right: 1.6rem;
-}
-
-.header .button:link,
-.header .button:visited {
-  border-radius: 10rem;
-  color: #fff;
-  display: inline-block;
-  font-size: 1.4rem;
-  padding: 1.2rem 3rem;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.header .button--ios:link,
-.header .button--ios:visited {
-  background-color: #26baa4;
-  -webkit-box-shadow: 0 1.5rem 3rem rgba(38, 186, 164, 0.2);
-          box-shadow: 0 1.5rem 3rem rgba(38, 186, 164, 0.2);
-}
-
-.header .button--ios:link:hover, .header .button--ios:link:active,
-.header .button--ios:visited:hover,
-.header .button--ios:visited:active {
-  background-color: #3cc1ad;
-}
-
-.header .button--mac:link,
-.header .button--mac:visited {
-  background-color: #6173ff;
-  -webkit-box-shadow: 0 1.5rem 3rem rgba(97, 115, 255, 0.2);
-          box-shadow: 0 1.5rem 3rem rgba(97, 115, 255, 0.2);
-}
-
-.header .button--mac:link:hover, .header .button--mac:link:active,
-.header .button--mac:visited:hover,
-.header .button--mac:visited:active {
-  background-color: #7181ff;
+  padding: 0 4.8rem;
 }
 
 .features {
@@ -213,4 +248,61 @@ body {
 .specialities__description {
   font-size: 1.4rem;
   line-height: 1.7;
+}
+
+.featured__logo {
+  width: 15%;
+}
+
+.downloads__text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 0 4.8rem;
+}
+
+.footer {
+  background-color: #f5f7f7;
+}
+
+.footer__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem 9.6rem;
+}
+
+.footer__logo {
+  height: 85%;
+}
+
+.footer__lists :not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+
+.footer__list, .footer__social-list {
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.footer__link:link, .footer__link:visited {
+  color: #4c545d;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__link:hover, .footer__link:active {
+  color: #26baa4;
+}
+
+.footer__social-lists {
+  margin-left: auto;
+}
+
+.footer__social-icon {
+  width: 75%;
+}
+
+.footer__social-icon:hover, .footer__social-icon:active {
+  -webkit-filter: saturate(75);
+          filter: saturate(75);
 }

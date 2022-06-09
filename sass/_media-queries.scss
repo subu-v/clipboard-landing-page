@@ -1,0 +1,40 @@
+@media (max-width: 30rem) {
+  .container {
+    max-width: 35rem;
+    padding: 4.8rem 0;
+  }
+
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+
+  //UTILITY CLASSES
+  .header {
+    background-image: url(../images/bg-header-mobile.png);
+    background-size: cover;
+    background-position: center;
+    padding: 4.8rem 2.4rem;
+
+    &__logo-box {
+      margin-bottom: 4.8rem;
+    }
+    .logo {
+      width: 30%;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      padding: 0 1rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+
+      :not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+}

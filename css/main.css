@@ -306,3 +306,42 @@ body {
   -webkit-filter: saturate(75);
           filter: saturate(75);
 }
+
+@media (max-width: 30rem) {
+  .container {
+    max-width: 35rem;
+    padding: 4.8rem 0;
+  }
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+  .header {
+    background-image: url(../images/bg-header-mobile.png);
+    background-size: cover;
+    background-position: center;
+    padding: 4.8rem 2.4rem;
+  }
+  .header__logo-box {
+    margin-bottom: 4.8rem;
+  }
+  .header .logo {
+    width: 30%;
+  }
+  .header__text {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+  .header .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.4rem;
+  }
+  .header .buttons :not(:last-child) {
+    margin-right: 0;
+  }
+}

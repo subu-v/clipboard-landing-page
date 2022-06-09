@@ -20,7 +20,8 @@ body {
   font-size: 1.6rem;
 }
 
-.container {
+.container,
+.container--120mw {
   max-width: 90rem;
   margin: 0 auto;
   padding: 4.8rem 9.6rem;
@@ -28,8 +29,6 @@ body {
 
 .container--120mw {
   max-width: 120rem;
-  margin: 0 auto;
-  padding: 4.8rem 9.6rem;
 }
 
 .heading-primary,
@@ -308,12 +307,16 @@ body {
 }
 
 @media (max-width: 30rem) {
-  .container {
+  .container,
+  .container--120mw {
     max-width: 35rem;
     padding: 4.8rem 0;
   }
   .heading-primary {
     font-size: 3.2rem;
+  }
+  .heading-secondary {
+    font-size: 2.6rem;
   }
   .header {
     background-image: url(../images/bg-header-mobile.png);
@@ -331,7 +334,7 @@ body {
     font-size: 1.6rem;
     padding: 0 1rem;
   }
-  .header .buttons {
+  .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -341,7 +344,104 @@ body {
             flex-direction: column;
     gap: 2.4rem;
   }
-  .header .buttons :not(:last-child) {
+  .buttons :not(:last-child) {
     margin-right: 0;
+  }
+  .features {
+    line-height: 1.2;
+    padding: 4.8rem 2.4rem;
+  }
+  .features__text {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 0 1rem;
+  }
+  .features__info-box {
+    max-width: 35rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4.8rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .features__info {
+    padding: 0 1.6rem;
+    line-height: 1.7;
+  }
+  .features__description {
+    font-size: 1.6rem;
+  }
+  .features__image {
+    width: 100%;
+  }
+  .specialities {
+    padding: 0 3.2rem;
+  }
+  .specialities__info-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+  }
+  .featured__logo-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featured__logo {
+    width: 35%;
+  }
+  .downloads {
+    padding: 0 2.2rem;
+  }
+  .downloads__text {
+    padding: 0;
+  }
+  .footer__logo {
+    width: 30%;
+  }
+  .footer__container {
+    max-width: 35rem;
+  }
+  .footer__about-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .footer__navigations {
+    display: block;
+  }
+  .footer__lists :not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  .footer__list {
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .footer__social-navigations {
+    margin: 0;
   }
 }

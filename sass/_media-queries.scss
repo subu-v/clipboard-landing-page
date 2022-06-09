@@ -1,5 +1,6 @@
 @media (max-width: 30rem) {
-  .container {
+  .container,
+  .container--120mw {
     max-width: 35rem;
     padding: 4.8rem 0;
   }
@@ -8,7 +9,10 @@
     font-size: 3.2rem;
   }
 
-  //UTILITY CLASSES
+  .heading-secondary {
+    font-size: 2.6rem;
+  }
+  //HEADER
   .header {
     background-image: url(../images/bg-header-mobile.png);
     background-size: cover;
@@ -26,15 +30,117 @@
       font-size: 1.6rem;
       padding: 0 1rem;
     }
+  }
 
-    .buttons {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    :not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  .features {
+    line-height: 1.2;
+    padding: 4.8rem 2.4rem;
+
+    &__text {
+      font-size: 1.6rem;
+      line-height: 1.7;
+      padding: 0 1rem;
+    }
+
+    &__info-box {
+      max-width: 35rem;
+      margin: 0 auto;
+      // padding: 0 2.4rem;
+
       display: flex;
       flex-direction: column;
-      gap: 2.4rem;
+      gap: 4.8rem;
+      text-align: center;
+      line-height: 1.5;
+    }
 
+    &__info {
+      padding: 0 1.6rem;
+      line-height: 1.7;
+    }
+
+    &__description {
+      font-size: 1.6rem;
+    }
+
+    &__image-box {
+      // box-shadow: 0 1rem 3.2rem rgba($color__black, 0.15);
+    }
+    &__image {
+      width: 100%;
+    }
+  }
+
+  .specialities {
+    padding: 0 3.2rem;
+
+    &__info-box {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+
+  .featured {
+    &__logo-box {
+      flex-direction: column;
+    }
+
+    &__logo {
+      width: 35%;
+    }
+  }
+
+  .downloads {
+    padding: 0 2.2rem;
+
+    &__text {
+      padding: 0;
+    }
+  }
+
+  .footer {
+    &__logo {
+      width: 30%;
+    }
+    &__container {
+      max-width: 35rem;
+    }
+
+    &__about-company {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+      align-items: center;
+      text-align: center;
+      height: max-content;
+    }
+
+    &__navigations {
+      display: block;
+    }
+
+    &__lists {
       :not(:last-child) {
-        margin-right: 0;
+        margin-bottom: 2.4rem;
       }
+    }
+    &__list {
+      font-size: 1.4rem;
+      margin-bottom: 2.4rem;
+    }
+    &__social-navigations {
+      margin: 0;
     }
   }
 }

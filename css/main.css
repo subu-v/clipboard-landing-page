@@ -223,7 +223,6 @@ body {
 }
 
 .features__text {
-  font-size: 1.6rem;
   padding: 0 4.8rem;
 }
 
@@ -243,12 +242,8 @@ body {
   font-size: 1.4rem;
 }
 
-.specialities__text {
-  font-size: 1.6rem;
-}
-
 .specialities__icon {
-  height: 15%;
+  width: 15%;
   margin-bottom: 2.4rem;
 }
 
@@ -261,8 +256,6 @@ body {
 }
 
 .cta__text {
-  font-size: 1.6rem;
-  line-height: 1.7;
   padding: 0 4.8rem;
 }
 
@@ -316,6 +309,10 @@ body {
     max-width: 35rem;
     padding: 4.8rem 0;
   }
+  .heading-primary,
+  .heading-secondary {
+    line-height: initial;
+  }
   .heading-primary {
     font-size: 3.2rem;
   }
@@ -326,7 +323,7 @@ body {
     background-image: url(../images/bg-header-mobile.png);
     background-size: cover;
     background-position: center;
-    padding: 8rem 2.4rem 4.8rem;
+    padding: 8rem 2.4rem 0;
   }
   .header__logo-box {
     margin-bottom: 4.8rem;
@@ -352,21 +349,15 @@ body {
     margin-right: 0;
   }
   .features {
-    line-height: 1.2;
     padding: 4.8rem 2.4rem;
   }
-  .features__header {
-    padding: 0 1.8rem;
-  }
   .features__text {
-    font-size: 1.4rem;
-    line-height: 1.7;
-    padding: 0 1rem;
+    font-size: 1.6rem;
+    padding: 0 1.3rem;
   }
   .features__info-box {
     max-width: 35rem;
     margin: 0 auto;
-    margin-bottom: 4.8rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -374,13 +365,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 3.2rem;
     gap: 4.8rem;
-    text-align: center;
-    line-height: 1.5;
   }
   .features__info {
     padding: 0 1.6rem;
-    line-height: 1.7;
+    text-align: center;
   }
   .features__description {
     font-size: 1.6rem;
@@ -389,7 +379,7 @@ body {
     width: 100%;
   }
   .specialities {
-    padding: 0 3.2rem 3.2rem;
+    padding: 0 4.6rem;
   }
   .specialities__info-box {
     display: -webkit-box;
@@ -401,26 +391,31 @@ body {
             flex-direction: column;
     gap: 3.2rem;
   }
-  .featured__logo-box {
+  .featured-in__logo-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .featured__logo {
+  .featured-in__logo {
     width: 35%;
   }
-  .downloads {
-    padding: 0 2.2rem;
+  .cta {
+    padding: 4.8rem 4.4rem;
   }
-  .downloads__text {
+  .cta__text {
+    font-size: 1.5rem;
     padding: 0;
   }
+  .footer {
+    text-align: center;
+  }
   .footer__logo {
-    width: 30%;
+    width: 35%;
   }
   .footer__container {
     max-width: 35rem;
+    padding: 4.8rem 6.4rem;
   }
   .footer__about-company {
     display: -webkit-box;
@@ -434,10 +429,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
   .footer__navigations {
     display: block;
@@ -450,6 +441,6 @@ body {
     margin-bottom: 2.4rem;
   }
   .footer__social-navigations {
-    margin: 0;
+    margin-left: 0;
   }
 }

@@ -139,5 +139,12 @@
     &__social-navigations {
       margin-left: 0;
     }
+
+    &__social-lists {
+      gap: 3.2rem;
+    }
+    &__social-icon {
+      width: 100%;
+    }
   }
 }

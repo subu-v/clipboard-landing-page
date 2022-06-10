@@ -299,8 +299,8 @@ body {
 }
 
 .footer__social-icon:hover, .footer__social-icon:active {
-  -webkit-filter: saturate(50);
-          filter: saturate(50);
+  -webkit-filter: saturate(70);
+          filter: saturate(70);
 }
 
 @media (max-width: 30rem) {
@@ -442,5 +442,11 @@ body {
   }
   .footer__social-navigations {
     margin-left: 0;
+  }
+  .footer__social-lists {
+    gap: 3.2rem;
+  }
+  .footer__social-icon {
+    width: 100%;
   }
 }

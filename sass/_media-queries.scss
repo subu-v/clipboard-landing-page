@@ -1,8 +1,14 @@
 @media (max-width: 30rem) {
+  //BASE
   .container,
   .container--120mw {
     max-width: 35rem;
     padding: 4.8rem 0;
+  }
+
+  .heading-primary,
+  .heading-secondary {
+    line-height: initial;
   }
 
   .heading-primary {
@@ -12,16 +18,17 @@
   .heading-secondary {
     font-size: 2.6rem;
   }
-  //HEADER
+
   .header {
     background-image: url(../images/bg-header-mobile.png);
     background-size: cover;
     background-position: center;
-    padding: 8rem 2.4rem 4.8rem;
+    padding: 8rem 2.4rem 0;
 
     &__logo-box {
       margin-bottom: 4.8rem;
     }
+
     .logo {
       width: 35%;
     }
@@ -33,9 +40,7 @@
   }
 
   .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
+    @include flex__direction--col;
 
     :not(:last-child) {
       margin-right: 0;
@@ -43,34 +48,24 @@
   }
 
   .features {
-    line-height: 1.2;
     padding: 4.8rem 2.4rem;
 
-    &__header {
-      padding: 0 1.8rem;
-    }
     &__text {
-      font-size: 1.4rem;
-      line-height: 1.7;
-      padding: 0 1rem;
+      font-size: 1.6rem;
+      padding: 0 1.3rem;
     }
 
     &__info-box {
       max-width: 35rem;
       margin: 0 auto;
-      margin-bottom: 4.8rem;
-      // padding: 0 2.4rem;
 
-      display: flex;
-      flex-direction: column;
+      @include flex__direction--col;
       gap: 4.8rem;
-      text-align: center;
-      line-height: 1.5;
     }
 
     &__info {
       padding: 0 1.6rem;
-      line-height: 1.7;
+      text-align: center;
     }
 
     &__description {
@@ -83,16 +78,14 @@
   }
 
   .specialities {
-    padding: 0 3.2rem 3.2rem;
+    padding: 0 4.6rem;
 
     &__info-box {
-      display: flex;
-      flex-direction: column;
-      gap: 3.2rem;
+      @include flex__direction--col;
     }
   }
 
-  .featured {
+  .featured-in {
     &__logo-box {
       flex-direction: column;
     }
@@ -102,29 +95,30 @@
     }
   }
 
-  .downloads {
-    padding: 0 2.2rem;
+  .cta {
+    padding: 4.8rem 4.4rem;
 
     &__text {
+      font-size: 1.5rem;
       padding: 0;
     }
   }
 
   .footer {
+    text-align: center;
+
     &__logo {
-      width: 30%;
+      width: 35%;
     }
+
     &__container {
       max-width: 35rem;
+      padding: 4.8rem 6.4rem;
     }
 
     &__about-company {
-      display: flex;
-      flex-direction: column;
-      gap: 3.2rem;
+      @include flex__direction--col;
       align-items: center;
-      text-align: center;
-      height: max-content;
     }
 
     &__navigations {
@@ -136,12 +130,14 @@
         margin-bottom: 2.4rem;
       }
     }
+
     &__list {
       font-size: 1.4rem;
       margin-bottom: 2.4rem;
     }
+
     &__social-navigations {
-      margin: 0;
+      margin-left: 0;
     }
   }
 }

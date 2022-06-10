@@ -4,7 +4,8 @@
 @import "layouts/_flex.scss";
 @import "layouts/_grid.scss";
 @import "_utility.scss";
-@import "_variables.scss";
+@import "abstracts/_mixins.scss";
+@import "abstracts/_variables.scss";
 
 .header {
   background-image: url(../images/bg-header-desktop.png);
@@ -28,7 +29,6 @@
 
 .features {
   &__text {
-    font-size: 1.6rem;
     padding: 0 4.8rem;
   }
 
@@ -50,12 +50,8 @@
 }
 
 .specialities {
-  &__text {
-    font-size: 1.6rem;
-  }
-
   &__icon {
-    height: 15%;
+    width: 15%;
     margin-bottom: 2.4rem;
   }
 
@@ -72,8 +68,6 @@
 
 .cta {
   &__text {
-    font-size: 1.6rem;
-    line-height: 1.7;
     padding: 0 4.8rem;
   }
 }
